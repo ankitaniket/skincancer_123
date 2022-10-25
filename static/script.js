@@ -5,4 +5,5 @@ file.onchange = function(){
     {
       document.getElementById('file-name').innerHTML = file.files[0].name;
     }
+    
 };
