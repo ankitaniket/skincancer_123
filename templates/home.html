@@ -7,8 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
+    <!-- Background animation link -->
+    <link rel='stylesheet' href='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css'><link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+
+    <!-- font link -->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <style>
         
@@ -36,6 +41,71 @@
                 background-position: 0% 50%;
             }
         }
+
+        .custom-btn {
+  margin-top: 30px;
+  color: #fff;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  position: relative;
+  left: 10px;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-table;
+}
+
+        .btn-14 {
+
+  color: #fff;
+  font-size: inherit;
+  font-weight: bold ;
+  border: none;
+  z-index: 2;
+}
+.btn-14:before,
+.btn-14:after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  border: 1px solid;
+  
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.btn-14:before{
+   top: 0;
+   left: 0;
+   border-bottom-color: transparent;
+   border-right-color: transparent;
+   border-top-color: #00aced;
+   border-left-color: #00aced;
+}
+.btn-14:after{
+   bottom: 0;
+   right: 0;
+   border-top-color: transparent;
+   border-left-color: transparent;
+   border-bottom-color: #00aced;
+   border-right-color: #00aced;
+}
+.btn-14:hover:before,
+.btn-14:hover:after {
+  background-color: black;
+  border-color: #00aced;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 5px black, 0 0 5px black inset;
+}
+
+
+
+
 /* .hero {
     background: black url(static/images/catdog.jpg) center / cover;
 } */
@@ -45,7 +115,18 @@
 
     
 <body>
+    
+
+
     <!-- Navigation panel -->
+    <a href="/gallery">
+        <button class="custom-btn btn-14">Gallery</button>
+     </a>
+     <a href="/delete">
+        <button class="custom-btn btn-14">Delete</button>
+     </a>
+
+   
 
 <!-- .hero -->
 <section class="hero is-fullheight" has-background-black>
@@ -90,6 +171,7 @@
                     </div>
                     <br>
                     <input type="submit" value="SUBMIT" class="button is-black" name = "image" id="classify_button">
+
                 </form>
       
                 </div>
@@ -127,16 +209,15 @@
 
 </section>
 
-
 <!-- .section -->
 <section class="bd-footer-link">
         <div class="container">
             <div class="columns">
                 <div class="column">
                         <article class="media notification has-background-white">
-                            <div class="media-content">
-                                <div class="content">
-                                    <p class="subsubtitle">
+                            <div class="media-content" >
+                                <div class="content" >
+                                    <p class="subsubtitle" >
                                     <strong>Contact</strong>
                                     </p>
                                 </div>

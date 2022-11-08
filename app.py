@@ -2,7 +2,7 @@ import os
 import glob
 import tensorflow as tf
 from flask import Flask, render_template, request, send_from_directory
-from keras_preprocessing.image import ImageDataGenerator
+from keras.preprocessing.image import ImageDataGenerator
 
 app = Flask(__name__)
 
@@ -74,6 +74,7 @@ def upload_file():
 def send_file(filename):
     return send_from_directory(UPLOAD_FOLDER, filename)
 
+
 @app.route('/gallery')
 def get_gallery():
     image_names = os.listdir('./uploads/all_class')
@@ -97,7 +98,4 @@ def delete_gallery():
 if __name__ == "__main__":
     app.run(port= 8080,debug=True)
     app.run()
-
-
-
-
+    

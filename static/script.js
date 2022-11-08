@@ -7,3 +7,6 @@ file.onchange = function(){
     }
     
 };
+
+
+
