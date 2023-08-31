@@ -12,8 +12,8 @@ filelock==3.8.0
 Flask==2.2.2
 flatbuffers==22.10.26
 gast==0.4.0
+google-auth-oauthlib==0.4.5
 google-auth==2.14.1
-google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
 grpcio==1.50.0
 h5py==3.7.0
@@ -30,7 +30,7 @@ oauthlib==3.2.2
 opt-einsum==3.3.0
 packaging==21.3
 platformdirs==2.5.3
-protobuf==4.24.2
+protobuf==3.20.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pyparsing==3.0.9
@@ -42,8 +42,8 @@ sqlparse==0.4.3
 tensorboard==2.5.2
 tensorflow==2.5.2
 tensorboard-data-server==0.6.1
+tensorflow-estimator==2.11.0
 tensorboard-plugin-wit==1.8.1
-tensorflow-estimator==2.10.0
 tensorflow-io-gcs-filesystem==0.27.0
 termcolor==2.1.0
 typing_extensions==4.4.0
