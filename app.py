@@ -95,7 +95,11 @@ def delete_gallery():
             print("Error while deleting file")
     return render_template("gallery.html")
 
+import os
+
 if __name__ == "__main__":
-    app.run(port= 8080,debug=True)
-    app.run()
+    # Use the environment variable PORT if available, or default to 8080
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port, debug=True)
+
     
