@@ -21,6 +21,7 @@ keras==2.13.1
 libclang==16.0.6
 Markdown==3.4.4
 MarkupSafe==2.1.3
+ndindex==1.7
 numpy==1.24.3
 oauthlib==3.2.2
 opt-einsum==3.3.0
@@ -42,5 +43,6 @@ tensorflow-macos==2.13.0
 termcolor==2.3.0
 typing_extensions==4.5.0
 urllib3==1.26.16
+versioned-hdf5==1.3.14
 Werkzeug==2.3.7
 wrapt==1.15.0
